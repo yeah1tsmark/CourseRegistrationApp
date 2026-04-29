@@ -25,10 +25,12 @@ class MainActivity : AppCompatActivity() {
 
         // Set up course options in spinner
         val courses = arrayOf(
-            "Select a Course",
-            "Data Structures",
-            "Database Systems",
-            "Software Engineering"
+            "ICT Project Management",
+            "Embedded Systems and Mobile programming",
+            "Compiler Construction",
+            "Network and Distributed Programming",
+            "Business Intelligence and Analytics",
+            "Computer Network Security"
         )
 
         val adapter = ArrayAdapter(
