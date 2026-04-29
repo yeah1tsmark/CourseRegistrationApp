@@ -63,10 +63,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Optional: Validate Student ID format (e.g., must be alphanumeric)
-        if (!isValidStudentId(studentId)) {
-            Toast.makeText(this, "Invalid Student ID format", Toast.LENGTH_SHORT).show()
-            return
-        }
+        //if (!isValidStudentId(studentId)) {
+          //  Toast.makeText(this, "Invalid Student ID format", Toast.LENGTH_SHORT).show()
+            //return
+        //}
 
         // Create intent and pass data to ConfirmationActivity
         val intent = Intent(this, ConfirmationActivity::class.java)
@@ -75,8 +75,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun isValidStudentId(studentId: String): Boolean {
+    //private fun isValidStudentId(studentId: String): Boolean {
         // Simple validation: Student ID should be at least 3 characters and alphanumeric
-        return studentId.length >= 3 && studentId.matches(Regex("^[a-zA-Z0-9]+$"))
-    }
+      //  return studentId.length >= 3 && studentId.matches(Regex("^[a-zA-Z0-9]+$"))
+    //}
 }
